@@ -1,3 +1,12 @@
+cmake_minimum_required(VERSION 3.24)
+project(neuralnet-ui LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+include(cmake/CompilerWarnings.cmake)
+
 add_library(neuralnet-ui STATIC
     src/render_neural_net.cpp
     src/render_net_topology.cpp
